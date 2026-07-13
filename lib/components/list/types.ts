@@ -134,6 +134,22 @@ export type ListProps<
     | ((index: number, cellProps: RowProps) => number)
     | DynamicRowHeight;
 
+  // TODO add documentation, examples, tests, whatever else,
+  // and implement this for grid.
+  // Also check whether the `PureComponent` part still applies.
+  /**
+   * By default, lists will use an item's index as its
+   * [key](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
+   * This is okay if:
+   * - Your collections of items is never sorted or modified
+   * - Your item renderer is not stateful and does not extend
+   *   `PureComponent`
+   *
+   * If your list does not satisfy the above constraints,
+   * use this property to specify your own keys for items.
+   */
+  rowKey?: (index: number, data: RowProps) => React.Key;
+
   /**
    * Additional props to be passed to the row-rendering component.
    * List will automatically re-render rows when values in this object change.
