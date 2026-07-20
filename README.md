@@ -158,6 +158,8 @@ This prop allows a custom <code>key</code> to be used instead.</p>
 <p>ℹ️ Custom keys can ensure better UX for sortable or filterable lists,
 particularly if your row components are stateful.
 Refer to the <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">React documentation</a> for more info.</p>
+<p>⚠️ This prop cannot be auto-memoized because it is called during render.
+It is important to always useCallback() for this prop; do not use an inline function.</p>
 </td>
     </tr>
     <tr>
