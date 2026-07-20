@@ -159,7 +159,7 @@ This prop allows a custom <code>key</code> to be used instead.</p>
 particularly if your row components are stateful.
 Refer to the <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">React documentation</a> for more info.</p>
 <p>⚠️ This prop cannot be auto-memoized because it is called during render.
-It is important to always useCallback() for this prop; do not use an inline function.</p>
+It is important to always <code>useCallback</code> for this prop; do not use an inline function.</p>
 </td>
     </tr>
     <tr>
@@ -281,6 +281,17 @@ This property can be used to render things like overlays or tooltips.</p>
 </td>
     </tr>
     <tr>
+      <td>columnKey</td>
+      <td><p>Grids use the column index as a <code>key</code> by default.
+This prop allows a custom <code>key</code> to be used instead.</p>
+<p>ℹ️ Custom keys can ensure better UX for sortable or filterable grids,
+particularly if your cell components are stateful.
+Refer to the <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">React documentation</a> for more info.</p>
+<p>⚠️ This prop cannot be auto-memoized because it is called during render.
+It is important to always <code>useCallback</code> for this prop; do not use an inline function.</p>
+</td>
+    </tr>
+    <tr>
       <td>defaultHeight</td>
       <td><p>Default height of grid for initial render.
 This value is important for server rendering.</p>
@@ -313,6 +324,17 @@ This may be used to (re)scroll a cell into view.</p>
       <td>overscanCount</td>
       <td><p>How many additional rows/columns to render outside of the visible area.
 This can reduce visual flickering near the edges of a grid when scrolling.</p>
+</td>
+    </tr>
+    <tr>
+      <td>rowKey</td>
+      <td><p>Grids use the row index as a <code>key</code> by default.
+This prop allows a custom <code>key</code> to be used instead.</p>
+<p>ℹ️ Custom keys can ensure better UX for sortable or filterable grids,
+particularly if your cell components are stateful.
+Refer to the <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">React documentation</a> for more info.</p>
+<p>⚠️ This prop cannot be auto-memoized because it is called during render.
+It is important to always <code>useCallback</code> for this prop; do not use an inline function.</p>
 </td>
     </tr>
     <tr>

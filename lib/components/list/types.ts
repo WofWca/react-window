@@ -143,7 +143,7 @@ export type ListProps<
    * Refer to the [React documentation](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key) for more info.
    *
    * ⚠️ This prop cannot be auto-memoized because it is called during render.
-   * It is important to always useCallback() for this prop; do not use an inline function.
+   * It is important to always `useCallback` for this prop; do not use an inline function.
    */
   rowKey?: (index: number, data: RowProps) => React.Key;
 

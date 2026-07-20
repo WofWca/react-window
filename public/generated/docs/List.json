@@ -145,7 +145,7 @@
           "intent": "primary"
         },
         {
-          "content": "<p>This prop cannot be auto-memoized because it is called during render.\nIt is important to always useCallback() for this prop; do not use an inline function.</p>\n",
+          "content": "<p>This prop cannot be auto-memoized because it is called during render.\nIt is important to always <code>useCallback</code> for this prop; do not use an inline function.</p>\n",
           "intent": "warning"
         }
       ],
