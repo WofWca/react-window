@@ -153,16 +153,11 @@ This can reduce visual flickering near the edges of a list when scrolling.</p>
     </tr>
     <tr>
       <td>rowKey</td>
-      <td><p>By default, lists will use an item&#39;s index as its
-<a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">key</a>.
-This is okay if:</p>
-<ul>
-<li>Your collections of items is never sorted or modified</li>
-<li>Your item renderer is not stateful and does not extend
-<code>PureComponent</code></li>
-</ul>
-<p>If your list does not satisfy the above constraints,
-use this property to specify your own keys for items.</p>
+      <td><p>Lists use the row index as a <code>key</code> by default.
+This prop allows a custom <code>key</code> to be used instead.</p>
+<p>ℹ️ Custom keys can ensure better UX for sortable or filterable lists,
+particularly if your row components are stateful.
+Refer to the <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">React documentation</a> for more info.</p>
 </td>
     </tr>
     <tr>
