@@ -136,7 +136,7 @@ export type ListProps<
 
   /**
    * Lists use the row index as a `key` by default.
-   * This prop allows a custom `key` to be used instead.
+   * This prop can provide a custom `key` value.
    *
    * ℹ️ Custom keys can ensure better UX for sortable or filterable lists,
    * particularly if your row components are stateful.

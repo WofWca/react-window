@@ -63,7 +63,7 @@ export type GridProps<
 
   /**
    * Grids use the column index as a `key` by default.
-   * This prop allows a custom `key` to be used instead.
+   * This prop can be used along with the `rowKey` prop to provide a custom `key` value.
    *
    * ℹ️ Custom keys can ensure better UX for sortable or filterable grids,
    * particularly if your cell components are stateful.
@@ -220,7 +220,7 @@ export type GridProps<
 
   /**
    * Grids use the row index as a `key` by default.
-   * This prop allows a custom `key` to be used instead.
+   * This prop can be used along with the `columnKey` prop to provide a custom `key` value.
    *
    * ℹ️ Custom keys can ensure better UX for sortable or filterable grids,
    * particularly if your cell components are stateful.

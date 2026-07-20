@@ -138,7 +138,7 @@
     "rowKey": {
       "description": [
         {
-          "content": "<p>Lists use the row index as a <code>key</code> by default.\nThis prop allows a custom <code>key</code> to be used instead.</p>\n"
+          "content": "<p>Lists use the row index as a <code>key</code> by default.\nThis prop can provide a custom <code>key</code> value.</p>\n"
         },
         {
           "content": "<p>Custom keys can ensure better UX for sortable or filterable lists,\nparticularly if your row components are stateful.\nRefer to the <a href=\"https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key\">React documentation</a> for more info.</p>\n",
